@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eee;
+}
+
+.clock--analog {
+  width: 50vmin;
+  height: 50vmin;
+  margin: auto;
+  position: relative;
+}
+
+.clock--analog__dial {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: #fff;
+  border: 1px solid #333;
+  border-radius: 50vmin;
+}
+
+.clock--analog__tick {
+  width: 1px;
+  height: 2vmin;
+  position: absolute;
+  background-color: #666;
+  top: 0%;
+  left: 50%;
+  transform-origin: 0 25vmin;
+}
+
+.clock--analog__tick--0 {
+  transform: rotate(0deg);
+}
+.clock--analog__tick--1 {
+  transform: rotate(30deg);
+}
+.clock--analog__tick--2 {
+  transform: rotate(60deg);
+}
+.clock--analog__tick--3 {
+  transform: rotate(90deg);
+}
+.clock--analog__tick--4 {
+  transform: rotate(120deg);
+}
+.clock--analog__tick--5 {
+  transform: rotate(150deg);
+}
+.clock--analog__tick--6 {
+  transform: rotate(180deg);
+}
+.clock--analog__tick--7 {
+  transform: rotate(210deg);
+}
+.clock--analog__tick--8 {
+  transform: rotate(240deg);
+}
+.clock--analog__tick--9 {
+  transform: rotate(270deg);
+}
+.clock--analog__tick--10 {
+  transform: rotate(300deg);
+}
+.clock--analog__tick--11 {
+  transform: rotate(330deg);
+}
+
+.clock--analog__needle {
+  position: absolute;
+  background-color: #666;
+  bottom: 50%;
+  left: 50%;
+  transform-origin: 0 25vmin;
+}
+.clock--analog__needle--hours {
+  width: 7px;
+  height: 8vmin;
+  transform-origin: 2px 8vmin;
+  transform: rotate(120deg);
+}
+.clock--analog__needle--minutes {
+  width: 5px;
+  height: 15vmin;
+  transform-origin: 1px 15vmin;
+  transform: rotate(30deg);
+}
+.clock--analog__needle--seconds {
+  width: 1px;
+  height: 20vmin;
+  transform-origin: 0 20vmin;
+}
+.clock--analog__screw {
+  width: 2vmin;
+  height: 2vmin;
+  position: absolute;
+  background-color: #000;
+  border-radius: 2vmin;
+  top: 50%;
+  left: 50%;
+  margin-top: -1vmin;
+  margin-left: -1vmin;
+}
