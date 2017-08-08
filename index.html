@@ -5,6 +5,7 @@
 </head>
 <link rel="stylesheet" type="text/css" href="style.css">
 <body>
+  <h1>Clockwork Exercise</h1>
 
   <div class="clock clock--analog">
     <div class="clock--analog__dial">
@@ -28,9 +29,16 @@
   </div>
 
   <div class="clock clock--digital">
-    <div class="clock--digital__display--hours"></div>
-    <div class="clock--digital__display--minutes"></div>
-    <div class="clock--digital__display--seconds"></div>
+    <div class="clock--digital__date">
+      <span class="clock--digital__day-name"></span>,
+      <span class="clock--digital__month"></span>
+      <span class="clock--digital__day"></span>,
+      <span class="clock--digital__year"></span>
+    </div>
+    <div class="clock--digital__split"></div>
+    <div class="clock--digital__time">
+      <span class="clock--digital__hours"></span>:<span class="clock--digital__minutes"></span>:<span class="clock--digital__seconds"></span>
+    </div>
   </div>
 
 <script type="text/javascript" src="index.js"></script>

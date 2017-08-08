@@ -4,6 +4,8 @@
 
 body {
   background-color: #eee;
+  color: #333;
+  font-family: sans-serif;
 }
 
 .clock--analog {
@@ -75,23 +77,24 @@ body {
   bottom: 50%;
   left: 50%;
   transform-origin: 0 25vmin;
+  /*transition: transform 0.218s ease;*/
 }
 .clock--analog__needle--hours {
-  width: 7px;
   height: 8vmin;
-  transform-origin: 2px 8vmin;
-  transform: rotate(120deg);
+  transform-origin: 0 8vmin;
+  width: 1vmin;
+  margin-left: -0.5vmin;
 }
 .clock--analog__needle--minutes {
-  width: 5px;
   height: 15vmin;
-  transform-origin: 1px 15vmin;
-  transform: rotate(30deg);
+  transform-origin: 0 15vmin;
+  width: 0.5vmin;
+  margin-left: -0.25vmin;
 }
 .clock--analog__needle--seconds {
-  width: 1px;
   height: 20vmin;
   transform-origin: 0 20vmin;
+  width: 1px;
 }
 .clock--analog__screw {
   width: 2vmin;
@@ -103,4 +106,35 @@ body {
   left: 50%;
   margin-top: -1vmin;
   margin-left: -1vmin;
+}
+
+
+
+
+.clock--digital {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  width: 75vmin;
+  font-size: 5vmin;
+  margin: 2vmin auto;
+}
+
+.clock--digital__date {
+  text-align: left;
+}
+.clock--digital__time {
+  text-align: right;
+}
+
+.clock--digital__split {
+  flex-grow: 1;
+  color: #666;
+}
+
+.clock--digital__split--month-day:after,
+.clock--digital__split--day-year:after,
+.clock--digital__split--day-name-month:after,
+.clock--digital__split--year-hours:after {
+  content: ' ';
 }
